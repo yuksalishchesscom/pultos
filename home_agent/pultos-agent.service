@@ -1,0 +1,14 @@
+[Unit]
+Description=PultOS uy agenti
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/pultos-home-agent
+ExecStart=%h/pultos-home-agent/venv/bin/python3 %h/pultos-home-agent/agent.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,17 @@
+venv/
+build/
+dist/
+__pycache__/
+*.pyc
+*.spec
+
+# Secrets and personal data — never commit these
+config.json
+home_agent_config.json
+home_agent/config.json
+relay/config.json
+relay/messages.db
+chat_history.json
+screenshots/
+
+.claude/

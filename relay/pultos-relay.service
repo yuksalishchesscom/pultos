@@ -1,0 +1,14 @@
+[Unit]
+Description=PultOS relay server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/pultos-relay
+ExecStart=/opt/pultos-relay/venv/bin/python3 /opt/pultos-relay/server.py
+Restart=always
+RestartSec=5
+User=pultos
+
+[Install]
+WantedBy=multi-user.target

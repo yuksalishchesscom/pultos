@@ -1,0 +1,8 @@
+flask
+google-genai
+cryptography
+pyinstaller
+pywebview
+pyside6
+qtpy
+websockets
